@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card-hover img{
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100fr 100fr 100fr 100fr;
+}
+.card{
+    margin: 10px;
+}
+.btn-primary{
+    background-color: brown !important;
+    border: 0px solid #000 !important;
+}
+h5{
+    font-size: 25px !important;
+    font-weight: bolder !important;
+}
+@media (max-width:1024px){
+    h5{
+        color: #c70b0b;
+    }
+    .container{
+        grid-template-columns: 100fr 100fr;
+        grid-template-rows: 100fr 100fr;
+    }
+}
+@media (max-width:600px){
+    h5{
+        color: #29c709;
+    }
+    .container{
+        grid-template-columns: 100fr;
+        grid-template-rows: 100fr 100fr 100fr 100fr;
+    }
+}
